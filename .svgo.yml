@@ -80,10 +80,6 @@ plugins:
     active: true
     type: perItem
 
-  - name: cleanupEnableBackground
-    active: true
-    type: perItem
-
   - name: removeHiddenElems
     active: true
     type: perItem
@@ -112,6 +108,10 @@ plugins:
       tref: true
 
   - name: moveElemsAttrsToGroup
+    active: true
+    type: perItemReverse
+
+  - name: collapseGroups
     active: true
     type: perItemReverse
 
@@ -163,13 +163,17 @@ plugins:
       remove: true
       minify: true
 
-  - name: collapseGroups
-    active: true
-    type: perItemReverse
-
   - name: removeUnusedNS
     active: true
     type: full
+
+  - name: trimWidthAlongPath
+    active: true
+    type: full
+    params:
+      floatPrecision: 3
+      leadingZero: true
+      negativeExtraSpace: true
 
 svg2js:
 
