@@ -137,8 +137,9 @@ exports.computeQuadraticBoundingBox = function(xa, ya, xb, yb, xc, yc) {
         // x = computeQuadraticBaseValue(t, xa, xb, xc);
         y = computeQuadraticBaseValue(t, ya, yb, yc);
 
-        if(y < miny) { miny = y; }
-        if(y > maxy) { maxy= y ; }
+        if (y < miny) { miny = y; }
+        if (y > maxy) { maxy = y ; }
+
     }
 
     return {
@@ -163,7 +164,7 @@ function computeQuadraticBaseValue(t, a, b, c) {
 function computeQuadraticFirstDerivativeRoot(a, b, c) {
 
     var t = -1,
-        denominator = a -2 * b + c;
+        denominator = a - 2 * b + c;
 
     if (denominator !== 0) {
         t = (a - b) / denominator;
