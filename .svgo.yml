@@ -168,11 +168,11 @@ plugins:
     type: full
 
   - name: cropAndCenterAlongPath
-    active: false
+    active: true
     type: full
     params:
-      hcrop: false
-      vcenter: false
+      hcrop: true
+      vcenter: true
       floatPrecision: 3
       leadingZero: true
       negativeExtraSpace: true

@@ -190,9 +190,6 @@ exports.cropAndCenterAlongPath = function(data, params) {
                 transform += ' translate(0 ' + (((svgHeight - realHeight) / 2) - ymin) + ')';
             }
 
-            console.log(realWidth + ' / ' + realHeight);
-            console.log((((svgHeight - realHeight) / 2) - ymin));
-
             if (transform) {
                 pathElem.addAttr({
                     name: 'transform',
