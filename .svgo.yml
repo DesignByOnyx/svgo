@@ -168,7 +168,7 @@ plugins:
     type: full
 
   - name: cropAndCenterAlongPath
-    active: true
+    active: false
     type: full
     params:
       hcrop: true
