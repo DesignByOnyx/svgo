@@ -7,7 +7,7 @@ var relative2absolute = require('./_path.js').relative2absolute,
     js2path = require('./_path.js').js2path,
     extend = require('../lib/svgo/tools').extend;
 
-exports.HcropAndVcenterAlongPath = function(data, params) {
+exports.cropAndCenterAlongPath = function(data, params) {
 
     data.content.forEach(function(item) {
 
