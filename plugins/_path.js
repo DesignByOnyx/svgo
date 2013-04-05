@@ -221,7 +221,7 @@ exports.applyTransforms = function(elem, path) {
                 ) {
 
                     // then apply it only to the first absoluted M
-                    newPoint = transformPoint(matrix.data, path[0].data[0], path[0].data[1]);
+                    newPoint = transformPoint(matrix.data, pathItem.data[0], pathItem.data[1]);
                     pathItem.data[0] = newPoint[0];
                     pathItem.data[1] = newPoint[1];
 

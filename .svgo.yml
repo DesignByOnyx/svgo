@@ -167,10 +167,12 @@ plugins:
     active: true
     type: full
 
-  - name: trimWidthAlongPath
-    active: true
+  - name: HcropAndVcenterAlongPath
+    active: false
     type: full
     params:
+      hcrop: false
+      vcenter: false
       floatPrecision: 3
       leadingZero: true
       negativeExtraSpace: true
